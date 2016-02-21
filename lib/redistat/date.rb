@@ -81,7 +81,7 @@ module Redistat
 
     def from_string(input)
       input += "19700101000000"[input.size..-1] if input =~ /^\d\d\d[\d]+$/i
-      from_time(::Time.parse(input))
+      from_time(::Time.zone.parse(input))
     end
 
   end

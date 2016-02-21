@@ -11,7 +11,7 @@ module Redistat
       parse_options(opts)
       self.scope = scope
       self.label = label_name if !label_name.nil?
-      self.date = time_stamp ||= Time.now
+      self.date = time_stamp ||= Time.current
     end
 
     def prefix
