@@ -12,6 +12,7 @@ module Redistat
       self.scope = scope
       self.label = label_name if !label_name.nil?
       self.date = time_stamp ||= Time.current
+      puts "SELF DATE #{self.date}"
     end
 
     def prefix
